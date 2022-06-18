@@ -1,0 +1,23 @@
+{
+  "name": "vue-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.6.2",
+    "pinia": "^2.0.14",
+    "vue": "^2.7.0-beta.2",
+    "vue-router": "^3.5.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^1.8.2",
+    "@vitejs/plugin-vue2": "^1.0.1",
+    "@vue/runtime-dom": "^3.2.37",
+    "vite": "^2.9.12",
+    "vue-template-babel-compiler": "^1.2.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
