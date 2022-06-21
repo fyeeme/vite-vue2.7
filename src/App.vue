@@ -27,7 +27,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
   </div>
 </template>
 
-<style>
+<style lang="less">
 @import "@/assets/base.css";
 
 #app {
@@ -37,6 +37,8 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
   font-weight: normal;
   background-image: url("@/assets/logo.svg");
+  background-size: 20% 20%;
+  background-repeat: no-repeat;
 }
 
 header {

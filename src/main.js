@@ -1,25 +1,13 @@
-// import Vue from "vue";
-// import VueCompositionAPI, { createApp, h } from "@vue/composition-api";
-// import { createPinia, PiniaVuePlugin } from "pinia";
-
-// import App from "./App.vue";
-import router from "./router";
-
-// Vue.use(VueCompositionAPI);
-
-// const app = createApp({
-//   router,
-//   pinia: createPinia(),
-//   render: () => h(App),
-// });
-// app.use(PiniaVuePlugin);
-
-// app.mount("#app");
-
 import Vue from "vue";
 import App from "./App.vue";
+import router from "./router";
+import { createPinia, PiniaVuePlugin } from "pinia";
+
+Vue.use(PiniaVuePlugin);
+const pinia = createPinia();
 
 new Vue({
-  router,
   render: (h) => h(App),
+  router,
+  pinia,
 }).$mount("#app");
